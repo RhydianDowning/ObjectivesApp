@@ -10,13 +10,14 @@
   </head>
   <body>
 
+
     {% include "../components/header.njk" %}
+    <h1 = Header>{{title}}</h1>
 
     {{ content | safe }}
 
     {% include "../components/footer.njk" %}
 
-    <h1 = Header>{{title}}</h1>
 
   </body>
 </html>

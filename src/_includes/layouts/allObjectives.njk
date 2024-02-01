@@ -1,0 +1,6 @@
+<!-- objectives.njk -->
+{% for singleObjective in objectives %}
+  <h2><a href="{{ objective.id | url }}">{{ objective.title }}</a></h2>
+  <p>{{ objective.description }}</p>
+{% endfor %}
+

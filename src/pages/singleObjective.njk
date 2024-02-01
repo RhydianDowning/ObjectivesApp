@@ -1,0 +1,15 @@
+<!-- objective.njk -->
+---
+layout: base.njk
+title: {{ objective.title }}
+---
+
+<p>{{ objective.description }}</p>
+
+<h3>Evidence:</h3>
+<ul>
+  {% for item in objective.evidence %}
+    <li>{{ item }}</li>
+  {% endfor %}
+</ul>
+
