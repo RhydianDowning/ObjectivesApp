@@ -1,0 +1,16 @@
+{
+  "name": "11tygameapp",
+  "version": "1.0.0",
+  "description": "A WebApp that returns live data from [game - unchosen]'s api built using 11ty and nunjucks",
+  "main": "index.js",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RhydianDowning",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "nunjucks": "^3.2.4"
+  }
+}

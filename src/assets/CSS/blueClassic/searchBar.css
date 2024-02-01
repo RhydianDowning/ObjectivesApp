@@ -1,0 +1,72 @@
+:root {
+  --rad: .7rem;
+  --dur: 1.3s;
+  --color-dark: #2f1f46;
+  --color-searchBox: #fff;
+  --color-Shimmer: #fd8d6b;
+  --font-fam: 'Roboto', sans-serif;
+  --height: 3rem;
+  --widthvw: 50;
+  --btn-width: 5rem;
+  --bez: cubic-bezier(0, 0, 0.43, 1.49);
+  --leftPad: calc((100 - var(--widthvw))/2)
+}
+
+form {
+  position: relative;
+  left: calc(var(--leftPad)*1vw);
+  width: calc(var(--widthvw)*1vw);
+  background: var(--color-Shimmer);
+  border-radius: var(--rad);
+  margin-bottom: calc(var(--height)/2);
+}
+
+input,
+button {
+  height: var(--height);
+  font-family: var(--font-fam);
+  border: 0;
+  color: var(--color-dark);
+  font-size: 1.8rem;
+}
+
+input[type="search"] {
+  outline: 0;
+  width: 100%;
+  background: var(--color-searchBox);
+  padding: 0 1.6rem;
+  border-radius: var(--rad);
+  transition: all var(--dur) var(--bez);
+  transition-property: width, border-radius;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0 2px 20px var(--color-Shimmer);
+}
+
+button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--btn-width);
+  font-weight: bold;
+  background: var(--color-Shimmer);
+  border-radius: 0 var(--rad) var(--rad) 0;
+}
+
+input:not(:placeholder-shown) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+
+  +button {
+    display: block;
+  }
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  margin-top: calc(var(--height)/2);
+}
+
+#search::placeholder {
+  text-align: center;
+}

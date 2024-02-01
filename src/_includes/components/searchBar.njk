@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href= {{site.stylesheet.searchBar.path}}>
+<flexbox class="parent">
+<div class="spacingDiv">
+
+<form onsubmit="searchInitiated(search.value); event.preventDefault();" role="search">
+  <input id="search" type="search" placeholder="AccountName#tag" autofocus required />
+  <button type="submit">Go</button>
+</form>
+<div>
+</flexbox>
+
+<script>
+function validSearch(acc,tag){
+  return(
+    acc.length > 2 &&
+    acc.length < 17 &&
+    tag.length > 2 &&
+    tag.length < 17
+  );
+}
+
+function searchInitiated(searchTerm) {
+  let [accountName, tag] = searchTerm.split("#");
+  if(!tag
+
+  if(validSearch(accountName,tag)){
+  console.log("accountName: " + accountName);
+  console.log("tag: #" + tag);
+  }else{
+    console.log("invalid search");
+  }
+}
+
+</script>

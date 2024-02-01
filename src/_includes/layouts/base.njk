@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{site.description}}">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href= {{site.stylesheet.base.path}}>
+  </head>
+  <body>
+
+    {% include "../components/header.njk" %}
+
+    {{ content | safe }}
+
+    {% include "../components/footer.njk" %}
+
+    <h1 = Header>{{title}}</h1>
+
+  </body>
+</html>
