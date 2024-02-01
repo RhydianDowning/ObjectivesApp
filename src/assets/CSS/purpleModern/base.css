@@ -1,6 +1,22 @@
-/*global styles*/
+@font-face {
+  font-family: "Roboto";
+  src: url('../../fonts/Roboto-Bold.woff2 ');
+}
 body{
   background: #2f1f46;
   color : #fff;
 }
+.spacer{
+  height: 2.5vh;
+}
+
+.Heading{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 

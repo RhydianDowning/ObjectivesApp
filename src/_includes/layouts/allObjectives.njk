@@ -1,6 +1,13 @@
+<!DOCTYPE html>
 <!-- objectives.njk -->
-{% for singleObjective in objectives %}
-  <h2><a href="{{ objective.id | url }}">{{ objective.title }}</a></h2>
-  <p>{{ objective.description }}</p>
-{% endfor %}
 
+<link rel="stylesheet" href={{site.stylesheet.allObjectives.path}}>
+
+<div class="objective-container">
+  {% for item in objectives.objectives %}
+  <a class="objective-card" href="objectives/{{ item.title | slugify }}/">
+    <h2 class="objective-title">{{ item.title }}</h2>
+    <p class="objective-description">{{ item.description }}</p>
+  </a>
+  {% endfor %}
+</div>

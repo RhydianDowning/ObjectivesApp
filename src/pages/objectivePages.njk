@@ -1,0 +1,24 @@
+---
+pagination:
+  data: objectives.objectives
+  size: 1
+  alias: objective
+permalink: "objectives/{{ objective.title | slugify }}/"
+---
+<link rel="stylesheet" href= {{site.stylesheet.singleObjective.path}}>
+
+<div class="singleObjective-container">
+  <h2 class="singleObjective-title">{{ objective.title }}</h2>
+  <p class="singleObjective-description">{{ objective.description }}</p>
+  <div class="spacer"></div>
+
+  {% if objective.evidence %}
+    <h3>Evidence:</h3>
+    <ul class="objective-evidence">
+      {% for item in objective.evidence %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
+

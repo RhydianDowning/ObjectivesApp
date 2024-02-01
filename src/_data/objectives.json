@@ -4,37 +4,46 @@
       "id": "objective_1",
       "title": "Improve knowledge relevant to team delivery",
       "description": "Examples of knowledge gaps identified, and actively mitigated with self-learning / KT from other team members",
-      "evidence": ["Evidence1", "Evidence2"]
+      "evidence": ["SSG 11ty and Nunjucks learning, as evidenced by this site. Link to the repository on About page.",
+        "Evidence2"]
     },
     {
       "id": "objective_2",
       "title": "Deliver stories and features in line with business priorities",
       "description": "How many stories have you delivered independently",
-      "evidence": ["Evidence1", "Evidence2"]
+      "evidence": ["Evidence1",
+        "Evidence2"]
     },
     {
       "id": "objective_3",
       "title": "Understand Engagement Team structure and responsibilities",
       "description": "Learn and then Present information on engagement Domain",
-      "evidence": ["Evidence1", "Evidence2"]
+      "evidence": ["Evidence1",
+        "Evidence2",
+        "Evidence3",
+        "Evidence4",
+        "Evidence5"]
     },
     {
       "id": "objective_4",
       "title": "Understand Team Agile Process",
       "description": "Learn and then Present information on team's Agile Process, with pros/cons and suggestions for improvement",
-      "evidence": ["Evidence1", "Evidence2"]
+      "evidence": ["Evidence1",
+        "Evidence2"]
     },
     {
       "id": "objective_5",
       "title": "Understand Trips",
       "description": "Learn and then present on TRIPS and the benefits/issues surrounding it",
-      "evidence": ["Evidence1", "Evidence2"]
+      "evidence": ["Evidence1",
+        "Evidence2"]
     },
     {
       "id": "objective_6",
       "title": "Identify Team Improvements",
       "description": "Example of identifying a technical or process improvement that can be made, taking ownership of how this might be executed with help from the rest of the team",
-      "evidence": ["Evidence1", "Evidence2"]
+      "evidence": ["Evidence1",
+        "Evidence2"]
     }
   ]
 }
